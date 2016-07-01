@@ -1,0 +1,9 @@
+#Juliaのメモ
+##コマンドラインの実行結果を変数に取得
+```{.julia}
+result=readall(`ls -l /`)
+@sprintf("%s",result)
+result=split(result,"\n")
+@show("%s",result)
+```
+
